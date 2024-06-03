@@ -12,37 +12,45 @@
 }
 
 body{
-    background: var(--main-background);
-    color:var(--text-color);
+    background-color: var(--main-background);
+    color:var(--nav-background);
     display: flex;
     flex-direction: column;
     min-height: 100svh;
     justify-content: center;
     align-items: center;
-    gap:45;
+    gap:35px;
     border: 1px solid blue;
 }
 
-nav{
-    background: var(--nav-background);
-    width: fit-content;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-a:hover{
+h1{
     color: var(--text-color);
-    transform: scale(1.1px);
-    transition: transform .3s;
 }
 
-a{
-    text-decoration: none;
-    color: var(--main-background);
+button{
+    width: 100%;
+    padding: 12px;
+    color: var(--nav-background);
     font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-ul,li{
-    list-style: none;
+main{
+    padding: 50vh;
+}
+
+label{
+    margin-bottom: 10px;
+
+}
+
+form{
+    margin-bottom: 16px;
+}
+
+button :hover{
+    color: var(--nav-background);
 }
 
